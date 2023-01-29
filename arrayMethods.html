@@ -93,6 +93,64 @@
 	console.log(n);
 	console.log(o);
 	
+	//concat
+	
+	let r=[1,2]
+    let s=[3,4,5]
+    let t=r.concat(s)
+	console.log(t);
+	
+	//every
+	
+	let u=[0,1,2,3,4,5,9,10];
+	let every=u.every(function(item,index){
+		return item > -1;
+	});
+	console.log("every",every);
+	
+	//fill
+	
+	let v=["rupu","vel","rupu","vel","rupu","vel"]
+    //v.fill("gopi") //change all value with new value
+	console.log("fill",v);
+	v.fill("gopi",2,4);
+	console.log("fill",v);
+	
+	
+	//indexof
+	//lastIndexOf
+	
+	let items=["apple","orange","graphs","applae","lemon","orange"];
+		console.log(items.indexOf("orange"));
+		console.log(items.lastIndexOf("orange"));
+		
+	//map
+	
+	let w=[2,6,8,10,3,1];	//original array not change & return new array
+	let finals=w.map(function(val){
+		return val*2;
+	});
+	console.log(finals);
+	
+	//reverse
+	
+	let fruits=["apple","orange","graphs","applae","lemon"];
+	fruits.reverse();
+	console.log(fruits);
+	
+	//some
+	
+	x=[1,4,40,10,30];
+	let y=x.some(function(val){
+		return val>18;
+	});
+	console.log(y);
+	
+	//toString
+	
+	let cars=["audi","bmw","volvo","hundai","mg"];
+	let string=cars.toString();
+	console.log(string);
 	
 	
 </script>
