@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+	
+<script>
+	//push 
+        
+	let a=["vel","pravin","rupu","rajith"];
+    let b=a.push("pandi");
+	console.log(a);
+	
+	//pop
+  
+	let c=["vel","pravin","rupu","rajith"]
+    c.pop();
+	console.log(c);
+	
+	//shift
+    
+	let d=["vel","pravin","rupu","rajith"]
+    d.shift()
+	console.log(d);
+	
+	//unshift
+    
+	let e=["vel","pravin","rupu","rajith"]
+    e.unshift("ganesh")
+	console.log(e);
+	
+	//splice
+	
+    let f=["vel","pravin","rupu","rajith"]
+    f.splice(2,0,"gopi")// first position second how many value to delete third to add
+	console.log(f);
+	
+	//slice
+    let p=["rupu","vel","pravin","gopi"]
+    let q=p.slice(1,3) //1 index 3-1=2index
+	console.log(p);		//create a new array		
+	console.log("slice",q);		//original not change	
+	
+	//reduce
+	
+	let g=[20,30,2,5,10,4];
+	let total=g.reduce(function(pre,cur){
+		return pre+cur;
+	})
+	console.log(total);
+	
+	//sort
+	
+    let h=["vel","pravin","rupu","rajith"]
+    h.sort() //alphabetical and ascending order
+	console.log(h);
+	
+	let i=[30,1,5,70,22];
+	let j=i.sort(function(a,b){
+		return b-a; //decending
+	})
+	console.log(j);
+	
+	//forrEach
+	
+	let daily=["wake","eat","sleep"];
+	
+	daily.forEach(function(value){
+		console.log(value);
+	})
+	daily.forEach(function(value,index){
+		console.log(value,index);
+	})
+	
+	//find
+	
+	let k=[3,5,9,10,30,20];		//only first prefernce return
+	let l=k.find(checkage);
+	function checkage(age){
+		return age>18;
+	}
+	console.log(l);
+
+	//join
+	
+	let m=["wake","eat","sleep"];  //array to convert string
+	let n=m.join();
+	let o=m.join(" & ");
+	console.log(n);
+	console.log(o);
+	
+	
+	
+</script>
+
+</body>
+</html>
